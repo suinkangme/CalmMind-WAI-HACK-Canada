@@ -10,6 +10,7 @@ https://www.womeninai.co/_files/ugd/878656_fa3000c258594eee9827520e11a4afc1.pdf
 https://github.com/suinkangme/CalmMind
 
 <h4>[Notion]</h4>
-- https://brindle-confidence-576.notion.site/WAI-Hackathon-Ideas-935aa494857b44fabd43475b375db82d
+https://brindle-confidence-576.notion.site/WAI-Hackathon-Ideas-935aa494857b44fabd43475b375db82d
+
 
 <img src = "CalmMind/Web_App/img/approach.png">
