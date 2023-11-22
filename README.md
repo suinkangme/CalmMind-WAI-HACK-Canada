@@ -1,16 +1,14 @@
-## CalmMind - Your Daily Dose of Mental Wellness
+# CalmMind - Your Daily Dose of Mental Wellness
 
-<h4>[2023 Women in AI Canada Hackathon Challenge‍]</h4>
-https://www.womeninai.co/_files/ugd/878656_fa3000c258594eee9827520e11a4afc1.pdf
+## [2023 Women in AI Canada Hackathon Challenge](https://www.womeninai.co/_files/ugd/878656_fa3000c258594eee9827520e11a4afc1.pdf)
 
-<h4>[Duration]‍</h4>
+## [Duration](#)
 - Nov 07, 2023 to Dec 08, 2023 (36 hrs)
 
-<h4>[Repo]</h4>
-https://github.com/suinkangme/CalmMind
+## [Repo](https://github.com/suinkangme/CalmMind)
 
-<h4>[Notion]</h4>
-https://brindle-confidence-576.notion.site/WAI-Hackathon-Ideas-935aa494857b44fabd43475b375db82d
+## [Notion](https://brindle-confidence-576.notion.site/WAI-Hackathon-Ideas-935aa494857b44fabd43475b375db82d)
+
+![Approach](https://github.com/suinkangme/CalmMind/blob/main/Web_App/img/approach.png)
 
 
-<img src = "CalmMind/Web_App/img/approach.png">
