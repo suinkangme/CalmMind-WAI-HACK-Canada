@@ -1,0 +1,205 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #89B9AD;
+}
+
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 50%;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+}
+
+.container .forms{
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+
+.container .form{
+    width: 50%;
+    padding: 30px;
+    background-color: #ffffff;
+    transition: margin-left 0.18s ease;
+}
+
+.container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+ } 
+
+.container .signup{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+
+.container.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+} 
+
+.container.active .forms{
+    height: 600px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+    color: #111011;
+}
+
+.form .title::before{
+    content: '';
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #b4b2d2 ;
+    border-radius: 25px;
+}
+
+.form .input-field{
+    background-color: #ffffff;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+}
+
+.input-field input{
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    margin: 0 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #eeefff;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #b4b2d2 ;
+}
+
+.input-field i{
+    /* position: absolute; */
+    color: #11101d;
+    display: 'flex';
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: #b4b2d2 ;
+}
+
+.input-field i.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+}
+
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: #b4b2d2 ;
+}
+
+.form .text{
+    color: #333000;
+    font-size: 14px; 
+}
+
+.form a.text{
+    color: #b4b2d2 ;
+    text-decoration: none;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    background-color: #11101d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #b4b2d2 ;
+}
+
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.error-small {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* height: 200px; */
+    
+    /* width: 100px; */
+    /* position: absolute; */
+}
