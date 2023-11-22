@@ -1,7 +1,6 @@
 ## CalmMind - Your Daily Dose of Mental Wellness
 
 - 2023 Women in AI Canada Hackathon Challenge
-:
 chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.womeninai.co/_files/ugd/878656_fa3000c258594eee9827520e11a4afc1.pdf
 
 - Notion
