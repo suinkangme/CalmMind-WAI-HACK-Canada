@@ -58,7 +58,7 @@ passport.use(new GoogleStrategy({
 
     var user = {
       credential: credential,
-      profile : profile
+      profile: profile
     }
 
     // Pass the user to the callback
@@ -164,6 +164,10 @@ app.get('/auth/google/callback',
 // help page - anyone can see this page
 app.get('/help', function (req, res) {
   res.render('help.ejs', { isAuthenticated: req.isAuthenticated() });
+});
+
+app.get('/recommend', function (req, res) {
+  res.render('recommend.ejs', { isAuthenticated: req.isAuthenticated() });
 });
 
 
@@ -293,7 +297,43 @@ app.post('/upload', upload.single('audio'), (req, res) => {
 
 
 
+// // write page - send write form to DB
+// app.post('/add', async function (request, response) {
+//   try {
+//     // console.log(request.body)
+//     // Fetch the counter document
+//     const counter = await Counter.findOne({ name: 'totalPostJournal' });
 
+//     // Increment the totalPost value and save the updated counter document
+//     counter.totalPost++;
+//     await counter.save();
+
+//     // Create a new post document
+//     const newPost = new Post({
+//       title: request.body.title,
+//       date: request.body.date,
+//       credential: request.user.credential._id,
+
+//     });
+
+//     // Save the new post document
+//     await newPost.save();
+
+
+//       response.redirect('/list');
+//     } catch (error) {
+//       console.error(error);
+//       response.status(500).send('Internal Server Error');
+//     }
+//   });
+
+
+
+
+
+
+
+const { spawn } = require('child_process');
 
 // write page - send write form to DB
 app.post('/add', async function (request, response) {
@@ -310,15 +350,37 @@ app.post('/add', async function (request, response) {
     const newPost = new Post({
       title: request.body.title,
       date: request.body.date,
-      credential : request.user.credential._id,
+      credential: request.user.credential._id,
 
     });
 
     // Save the new post document
     await newPost.save();
 
+    // Call Python script for emotion detection
+    const text = request.body.title; // Text to analyze
+    const pythonProcess = spawn('python', ['./scripts/emotion_detection_text.py', text]);
 
-    response.redirect('/list')
+    let scriptOutput = "";
+
+    pythonProcess.stdout.on('data', (data) => {
+      scriptOutput += data.toString();
+    });
+
+    pythonProcess.on('close', async (code) => {
+      if (code === 0) {
+        console.log("Emotion Detection Output:", scriptOutput);
+        // Optionally handle the output, e.g., save it to DB, or send back to client
+        // Update the Post document with emotion data
+        await Post.findByIdAndUpdate(newPost._id, { emotion: scriptOutput });
+
+        // Redirect or respond after processing
+        response.redirect('/list');
+      } else {
+        console.error(`Python script exited with code ${code}`);
+        response.status(500).send('Error in processing');
+      }
+    });
   } catch (error) {
     console.error(error);
     response.status(500).send('Internal Server Error');
@@ -332,7 +394,7 @@ app.post('/add', async function (request, response) {
 // list page - Route to render the posts
 app.get('/list', (req, res) => {
   if (req.isAuthenticated()) {
-    Post.find({ 'credential' : req.user.credential._id}).sort({ date: -1 }).exec()
+    Post.find({ 'credential': req.user.credential._id }).sort({ date: -1 }).exec()
       .then(posts => {
         res.render('list', { posts: posts, isAuthenticated: true });
       })
