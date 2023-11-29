@@ -159,9 +159,11 @@ app.get('/auth/google/callback',
   });
 
 
-// map
-app.get('/map', function (req, res) {
-  res.render('map.ejs', { isAuthenticated: req.isAuthenticated() });
+
+
+// help page - anyone can see this page
+app.get('/help', function (req, res) {
+  res.render('help.ejs', { isAuthenticated: req.isAuthenticated() });
 });
 
 
@@ -253,7 +255,8 @@ app.delete('/delete', function (request, response) {
   Post.deleteOne({ _id: postId })
     .then(() => {
       console.log('Terminal: Deletion complete');
-      response.status(200).send({ message: 'Successfully deleted' });
+      // response.status(200).send({ message: 'Successfully deleted', redirect: '/list' });
+      response.status(200).redirect('/list');
     })
     .catch(error => {
       console.error('Error deleting post:', error);
