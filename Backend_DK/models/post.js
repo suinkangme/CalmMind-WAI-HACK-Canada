@@ -10,6 +10,11 @@ const postSchema = new mongoose.Schema({
     type: Date,
     required: true,
   },
+  credential: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Credential',
+    required: true,
+  },
 });
 
 // Create the Post model

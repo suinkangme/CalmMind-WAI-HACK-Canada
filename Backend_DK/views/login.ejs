@@ -7,39 +7,63 @@
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <style>
+        .login-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .login-text {
+        color: #4a4a4a;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .google-btn {
+        background-color: #4285F4; /* Google Blue */
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* space between icon and text */
+    }
+
+    .google-btn img {
+        width: 20px; /* Adjust icon size */
+    }
+
+    .google-btn:hover {
+        background-color: #357ae8; /* Darker shade for hover effect */
+        text-decoration: none; /* Removes underline on hover */
+    }
+
+    </style>
+
 </head>
+
 
 <body>
 
     <!-- nav -->
-    <%- include('nav.html') %>
+    <%- include('nav', { isAuthenticated: isAuthenticated }) %>
 
 
     <div class="container" style="max-width: 600px; margin-top: 100px;">
 
-    
-      <h4 class="container mt-4"><strong>Login</strong></h4>
-
-      <div class="container mt-3">
-  
-          <!-- When the login button is clicked, perform the following action (send a POST request to the server) -->
-
-
-          <form action="/login" method="POST">
-              <div class="form-group">
-                  <label>ID</label>
-                  <input type="text" class="form-control" name="id" required>
-              </div>
-              <div class="form-group mt-2">
-                  <label>Password</label>
-                  <input type="password" class="form-control" name="pw" required>
-              </div>
-              <button type="submit" class="btn btn-outline-danger mt-3">Login</button>
-          </form>
-      </div>
-
-      <p class="container text-sm text-gray-600 mt-4">Not a member? <a href="/signup" class="text-blue-500">Sign up</a></p>
+      <div class="login-container">
+        <a href="/auth/google" class="google-btn">
+            <img src="https://img.icons8.com/color/16/000000/google-logo.png" /> Login with Google
+        </a>
     </div>
+    
+
 
 
 

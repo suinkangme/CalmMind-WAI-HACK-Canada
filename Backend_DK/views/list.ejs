@@ -13,24 +13,24 @@
 
 <body>
   <!-- nav -->
-  <%- include('nav.html') %>
+  <%- include('nav', { isAuthenticated: isAuthenticated }) %>
 
     <div class="container mt-4" style="max-width: 800px;">
       <h4 class="container mt-4"><strong>Journals</strong></h4>
 
       <!-- search function UI -->
-      <div class="container input-group mb-2 mt-4">
+      <!-- <div class="container input-group mb-2 mt-4">
         <input class="form-control" id="search-input">
         <button class="input-group-append btn" style="background-color: #C7DCA7;" id="search">Search</button>
-      </div>
+      </div> -->
 
       <!-- reqest GET when search button is pressed + send data as query string -->
-      <script>
+      <!-- <script>
         $('#search').click(function () {
           var userInput = $('#search-input').val();
           window.location.replace('/search?value=' + userInput)
         });
-      </script>
+      </script> -->
 
       <!-- show journals -->
       <div class="container mt-4">

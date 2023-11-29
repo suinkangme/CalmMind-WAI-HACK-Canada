@@ -59,7 +59,8 @@ function uploadRecording(audioBlob) {
   const formData = new FormData();
   formData.append("audio", audioBlob, "recording.webm");
 
-  fetch('http://127.0.0.1:8080/upload', {
+
+  fetch('/upload', {
       method: 'POST',
       body: formData,
   })

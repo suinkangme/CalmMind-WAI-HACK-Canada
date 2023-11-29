@@ -12,28 +12,15 @@
 <body>
 
   <!-- nav -->
-  <%- include('nav.html') %>
+  <%- include('nav', { isAuthenticated: isAuthenticated }) %>
 
 
   <div class="container mt-4">
     <p>Home - Your Daily Dose of Mental Wellness</p>
-
+    <% if (isAuthenticated) { %>
+      <p>Welcome, <%= user.profile.displayName %>!</p>
+    <% } %>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
