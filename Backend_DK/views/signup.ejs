@@ -18,19 +18,19 @@
     <div class="container" style="max-width: 600px; margin-top: 100px;">
 
 
-      <h4 class= "mt-4"><strong>Sign Up</strong></h4>
-      <div class= "mt-3">
+      <h4 class="container mt-4"><strong>Sign Up</strong></h4>
+      <div class="container mt-3">
 
           <!-- When the login button is clicked, perform the following action (send a POST request to the server) -->
 
           <form action="/register" method="POST">
               <div class="form-group">
                   <label>ID</label>
-                  <input type="text" class="form-control" name="id">
+                  <input type="text" class="form-control" name="id" required>
               </div>
               <div class="form-group mt-2">
                   <label>Password</label>
-                  <input type="password" class="form-control" name="pw">
+                  <input type="password" class="form-control" name="pw" required>
               </div>
               <button type="submit" class="btn btn-outline-danger mt-3">Sign up</button>
           </form>

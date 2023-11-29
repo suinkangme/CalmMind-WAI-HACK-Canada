@@ -1,53 +1,25 @@
-/* 보통 내가만든 css 파일은 public 폴더 안에 넣는데 관용적인것임
-그런다음 노드쨩에게 '나는 퍼블릭 폴더도 있다' 라고 알려줘야함. 안알랴주면 모름 
-서버파일로 가서 app.use('/public', express.static('public')) 이 코드 적으삼.*/
 
-
-/* 배경색 : #89B9AD , 버튼색 : #C7DCA7 */
-body {
+/* bg : #89B9AD , btn : #C7DCA7 */
+/* body {
   background-color: #89B9AD;
+} */
+
+.post-list-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  margin-bottom: 15px;
 }
 
-a:link {
+.post-list-item:last-child {
+  border-bottom: none;
+}
+
+.hover-link {
+  color: inherit;
   text-decoration: none;
-  color: black;
-  font-size: 16px;
 }
 
-
-
-a:visited {
-  text-decoration: none;
-  color:black
-}
-
-a:hover {
-  color: green;
-}
-
-
-/* 채팅창 */
-
-.chat-content {
-  height: 450px;
-  overflow-y: scroll;
-  padding: 10px;
-}
-.chat-content li {
-  margin-top: 10px;
-  list-style: none;
-}
-.text-small {
-  font-size: 12px;
-  color: gray;
-  margin-bottom: 0;
-}
-.chat-box {
-  background: #eee;
-  padding: 5px;
-  border-radius: 5px;
-  float: left;
-}
-.mine {
-  float: right;
+.hover-link:hover {
+  color: #89B9AD;
+  /* or any color you prefer */
 }

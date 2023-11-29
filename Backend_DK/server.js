@@ -47,9 +47,6 @@ app.get('/record', function (request, response) {
   response.render('record.ejs');
 });
 
-// app.get('/list', function (request, response) {
-//   response.render('list.ejs');
-// });
 
 app.get('/login', function (request, response) {
   response.render('login.ejs');
@@ -62,6 +59,69 @@ app.get('/signup', function (request, response) {
 app.get('/map', function (request, response) {
   response.render('map.ejs');
 });
+
+
+
+// detail page
+app.get('/detail/:id', function (request, response) {
+  Post.findById(request.params.id)
+    .then(result => {
+      if (!result) {
+        // Handle the case where the post with the given ID doesn't exist
+        response.status(404).send("Post not found");
+        return;
+      }
+
+      // console.log(result);
+      response.render('detail.ejs', { detailData: result });
+    })
+    .catch(err => {
+      console.error(err);
+      // Handle the error, for example, by sending a response to the client
+      response.status(500).send("Error occurred");
+    });
+});
+
+
+// edit page
+app.get('/edit/:id', function (request, response) {
+  Post.findById(request.params.id)
+    .then(result => {
+      if (!result) {
+        // Handle case where no post is found
+        response.status(404).send("Post not found");
+        return;
+      }
+      response.render('edit.ejs', { editData: result });
+    })
+    .catch(error => {
+      console.error('Error finding post:', error);
+      response.status(500).send("Error finding the post");
+    });
+});
+
+
+//submit in edit page
+app.put('/edit', function (request, response) {
+  const postId = request.body.id;
+
+  const updatedData = {
+    title: request.body.title,
+    date: request.body.date
+  };
+
+  Post.updateOne({ _id: postId }, { $set: updatedData })
+    .then(result => {
+      console.log('Update complete');
+      response.redirect('/detail/' + postId);
+    })
+    .catch(error => {
+      console.error('Error updating:', error);
+      response.status(500).send("Error updating the post");
+    });
+});
+
+
 
 
 
@@ -141,36 +201,6 @@ app.post('/add', async function (request, response) {
   }
 });
 
-
-
-
-
-
-
-
-
-
-
-// //ejs 파일은 무조건무조건 views 라는 폴더 아래에 있어야함
-// // /list로 GET요청하면 디비에 저장된 데이터 예쁘게 보여주셈 
-// app.get('/list', function (요청, 응답) {
-
-//   //먼저 데이터 꺼내오삼
-//   // 모든데이터를 어레이형식으로. 걍외우셈
-//   db.collection('post').find().toArray(function (에러, 결과) {
-//     // console.log(결과); //보면 리스트안에 오브젝트(딕셔너리) 형식으로 데이터들이 들어있음
-
-//     //이제 꺼낸 데이터를 보여주셈
-//     응답.render('list.ejs', { 포스트작명: 결과 });
-//   });
-
-
-
-// });
-
-
-
-// const Post = mongoose.model('Post', postSchema);
 
 // Route to render the posts
 app.get('/list', (req, res) => {
