@@ -167,14 +167,7 @@ app.get('/help', function (req, res) {
 });
 
 app.get('/recommend', function (req, res) {
-  res.render('recommend.ejs', { 
-    isAuthenticated: req.isAuthenticated(),
-    detected_emotion: "happy",
-    risk_assessment: "low",
-    stress_management_score: "high",
-    journal_prompts: "You are doing great!",
-    music_recommendation: "37i9dQZF1DX3rxVfibe1L0?si=9e7c3a3e0b9f4e1c"
-   });
+  res.render('recommend.ejs', { isAuthenticated: req.isAuthenticated() });
 });
 
 
