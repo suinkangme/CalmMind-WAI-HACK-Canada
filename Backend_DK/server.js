@@ -166,18 +166,48 @@ app.get('/help', function (req, res) {
   res.render('help.ejs', { isAuthenticated: req.isAuthenticated() });
 });
 
+
+
+
+// recoommend page
 app.get('/recommend', function (req, res) {
   res.render('recommend.ejs', { 
     isAuthenticated: req.isAuthenticated(),
-    detected_emotion: "happy",
-    risk_assessment: "low",
-    stress_management_score: "high",
-    journal_prompts: "You are doing great!",
-    music_recommendation: "37i9dQZF1DX3rxVfibe1L0?si=9e7c3a3e0b9f4e1c"
+    detected_emotion: "Sadness",
+    risk_assessment: "High",
+    stress_management_score: "Low",
+    journal_prompts: `1. Can you identify any specific events or triggers that may have contributed to this feeling of sadness and weariness? Reflecting on these events or triggers may help you better understand the root cause of your emotions and develop strategies for managing them.
+    \n2. What are some small, intentional actions you can take each day to bring a sense of joy and purpose back into your life? By focusing on small, achievable goals, you may find that your overall sense of well-being improves, even if it's just slightly.
+    \n3. How have you been taking care of yourself lately? Are there any self-care practices or activities that you find particularly helpful during times of emotional challenge? By prioritizing self-care and self-compassion, you may find that your mental health and overall well-being improve.`,
+    music_recommendation: "3HvYANP1uSe561aLBsrhka?si=ce07b03b6e84408b"
    });
 });
 
+// // Joy
+// app.get('/recommend', function (req, res) {
+//   res.render('recommend.ejs', { 
+//     isAuthenticated: req.isAuthenticated(),
+//     detected_emotion: "Joy",
+//     risk_assessment: "No risk",
+//     stress_management_score: "Low",
+//     journal_prompts: `1. Reflecting on this experience of feeling "light" and "free," can you identify any patterns or habits that may have contributed to this emotional state? \n\n2. How do you think your mindset and emotional state may have shifted over time, and what are some potential factors that could be influencing these changes? \n\n3. As you continue to cultivate this sense of well-being, what strategies or practices could you implement to maintain and deepen this emotional state in the long term?`,
+//     music_recommendation: "5J4G3iXGoIv4d5wUZAXtND?si=575365a4232245ad"
+//    });
+// });
 
+// // disapintment
+// app.get('/recommend', function (req, res) {
+//   res.render('recommend.ejs', { 
+//     isAuthenticated: req.isAuthenticated(),
+//     detected_emotion: "Disappointment",
+//     risk_assessment: "High",
+//     stress_management_score: "Medium",
+//     journal_prompts: `1. What are some of the thoughts and beliefs that contribute to the feeling of being weighed down? Can you challenge or reframe these thoughts to offer a more positive perspective?
+//     \n2. What are some small steps you could take to break free from the isolation and connect with others? What might be the benefits of taking these steps?
+//     \n3. What are some things that bring you joy or comfort when you're feeling overwhelmed? Can you make time for these things in your daily routine?`,
+//     music_recommendation: "37i9dQZF1DX3rxVfibe1L0?si=9e7c3a3e0b9f4e1c"
+//    });
+// });
 
 
 
@@ -339,7 +369,7 @@ app.post('/upload', upload.single('audio'), (req, res) => {
 
 
 
-
+// let node js to run external script (AI model python script)
 const { spawn } = require('child_process');
 
 // write page - send write form to DB
