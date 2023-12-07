@@ -3,7 +3,7 @@
 ## [2023 Women in AI Canada Hackathon Challenge](https://www.womeninai.co/_files/ugd/878656_fa3000c258594eee9827520e11a4afc1.pdf)
 
 ## [Duration](#)
-- Nov 07, 2023 to Dec 08, 2023 (36 hrs)
+- Nov 07, 2023 to Dec 08, 2023
 
 ## [Repo](https://github.com/suinkangme/CalmMind)
 
@@ -12,5 +12,5 @@
 ![Approach](https://github.com/suinkangme/CalmMind/blob/main/Web_App/img/approach.png)
 
 
-## Tech Stack
+## [Tech Stack](#)
 ![Approach](https://github.com/suinkangme/CalmMind/blob/main/Backend_DK/public/img/tech_stack.png)
