@@ -12,3 +12,5 @@
 ![Approach](https://github.com/suinkangme/CalmMind/blob/main/Web_App/img/approach.png)
 
 
+## Tech Stack
+![Approach](https://github.com/suinkangme/CalmMind/blob/main/Backend_DK/public/img/tech_stack.png)
