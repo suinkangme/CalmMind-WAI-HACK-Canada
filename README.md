@@ -1,6 +1,6 @@
 ## CalmMind - 'Your Daily Dose of Mental Wellness'
 
-### 2023 Women in AI Canada Hackathon Challenge 
+### 2023 Women in AI Canada Hackathon Challenge
 - [Challenge](https://www.womeninai.co/_files/ugd/878656_fa3000c258594eee9827520e11a4afc1.pdf)
 
 <h4>[ DURATION ]‍</h4>
@@ -8,7 +8,7 @@
 
 <br>
 
-<h4> TEAM - Well-being Wizard 🙋 </h4>
+<h4> TEAM - Well-being Wizard 🔮 </h4>
 
 | NAME | AFFILIATION | 
 | --- |  --- |  
@@ -21,22 +21,24 @@
 ## CalmMind (Traditional AI Solution)
 
 <h3>💡Background - Problem Statement💡</h3>
-- 
+- Mental Health Challenges Impact Daily Life 
+- Stigma and Barriers in Mental Health Care
 
 <br>
 
 <h3>🎯Our solution🎯</h3>
-- 
+- (1) Music and Mental Health: A Powerful Connection 
+=> Music Therapy Recommendation 🎵
+
+- (2) Journaling for Mental Wellness: A Transformative Practice
+=> Therapy LLM & Web Application 📝
+
 
 <br>
 
 <h4> AI_Solution </h4>
 - 
 
-<br>
-
-<h4>Tech Stack</h4>
-- 
 
 <br>
 
@@ -47,8 +49,13 @@
 <br>
 
 <h4> Future Approach </h4>
-- 
+- (1)
+- (2)
+- (3)
 
+
+<h4>Tech Stack</h4>
+- 
 
 <h5>Notion</h5>
 https://devpost.com/software/roadbuddy-lio7xt](https://brindle-confidence-576.notion.site/WAI-Hackathon-Ideas-935aa494857b44fabd43475b375db82d)https://brindle-confidence-576.notion.site/WAI-Hackathon-Ideas-935aa494857b44fabd43475b375db82d
@@ -65,6 +72,23 @@ https://github.com/suinkangme/CalmMind_WAI_HACK_Canada
 <br>
 
 <h5> Reference </h5>
+[1]https://www.cdc.gov/nchs/data/nhsr/nhsr041.pdf
+[2]https://www.cdc.gov/nchs/data/nhsr/nhsr041.pdf 
+[3]https://scholar.smu.edu/cgi/viewcontent.cgi?article=1197&context=datasciencereview 
+[4]https://www.urmc.rochester.edu/encyclopedia/content.aspx?ContentID=4552&ContentTypeID=1 
+[5]https://huggingface.co/datasets/Amod/mental_health_counseling_conversations?row=0 
+[6]https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset 
+[7]https://huggingface.co/gooohjy/suicidal-bert 
+[8]https://huggingface.co/Phoshco/AnxietyvsN 
+[9]https://huggingface.co/vibhorag101/roberta-base-suicide-prediction-phr
+[10]https://huggingface.co/SamLowe/roberta-base-go_emotions
+[11]https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
+[12]https://huggingface.co/datasets/maharshipandya/spotify-tracks-dataset
+[13]https://www.psychiatry.org/news-room/apa-blogs/power-of-music-in-mental-well-being
+[14]https://www.musictherapy.org/research/factsheets/
+[15]https://www.canada.ca/en/public-health/services/publications/diseases-conditions/mental-illness-canada-infographic.html
+[16]https://www.hopechest.org/global-mental-health-statistics
+
 
 ***
 
