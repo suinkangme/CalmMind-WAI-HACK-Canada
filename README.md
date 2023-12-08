@@ -1,4 +1,4 @@
-## CalmMind - 'Your Daily Dose of Mental Wellness'
+## CalmMind🌿 - 'Your Daily Dose of Mental Wellness'
 
 ### 2023 Women in AI Canada Hackathon Challenge
 - [Challenge Description](https://www.womeninai.co/_files/ugd/878656_fa3000c258594eee9827520e11a4afc1.pdf)
@@ -16,9 +16,8 @@
 | Suin Kang | Undergrad Student, Concordia University |  
 | Deokyeong Kim | Undergrad Student, Concordia University |  
 
-<br>
 
-## CalmMind (Traditional AI Solution)
+## CalmMind🌿 (Traditional AI Solution) 
 
 <h3>💡Background - Problem Statement💡</h3>
 - Mental Health Challenges Impact Daily Life 
