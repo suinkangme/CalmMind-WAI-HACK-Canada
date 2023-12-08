@@ -16,6 +16,7 @@
 | Suin Kang | Undergrad Student, Concordia University |  
 | Deokyeong Kim | Undergrad Student, Concordia University |  
 
+<br>
 
 ## CalmMind🌿 (Traditional AI Solution) 
 
@@ -27,9 +28,13 @@
 
 <h3>🎯Our solution🎯</h3>
 - (1) Music and Mental Health: A Powerful Connection 
+
 => Music Therapy Recommendation 🎵
 
+<br>
+
 - (2) Journaling for Mental Wellness: A Transformative Practice
+  
 => Therapy LLM & Web Application 📝
 
 
