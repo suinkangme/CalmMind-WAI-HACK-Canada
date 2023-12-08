@@ -1,7 +1,7 @@
 ## CalmMind - 'Your Daily Dose of Mental Wellness'
 
 ### 2023 Women in AI Canada Hackathon Challenge
-- [Challenge](https://www.womeninai.co/_files/ugd/878656_fa3000c258594eee9827520e11a4afc1.pdf)
+- [Challenge Description](https://www.womeninai.co/_files/ugd/878656_fa3000c258594eee9827520e11a4afc1.pdf)
 
 <h4>[ DURATION ]‍</h4>
 - Nov 07, 2023 to Dec 08, 2023 ( 1 month )
