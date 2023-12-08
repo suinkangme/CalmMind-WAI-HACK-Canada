@@ -2,6 +2,8 @@
 
 ### 2023 Women in AI Canada Hackathon Challenge
 - [Challenge Description](https://www.womeninai.co/_files/ugd/878656_fa3000c258594eee9827520e11a4afc1.pdf)
+  
+<br>
 
 <h4>[ DURATION ]‍</h4>
 - Nov 07, 2023 to Dec 08, 2023 ( 1 month )
@@ -27,13 +29,14 @@
 <br>
 
 <h3>🎯Our solution🎯</h3>
-- (1) Music and Mental Health: A Powerful Connection 
+
+(1) Music and Mental Health: A Powerful Connection 
 
 => Music Therapy Recommendation 🎵
 
 <br>
 
-- (2) Journaling for Mental Wellness: A Transformative Practice
+(2) Journaling for Mental Wellness: A Transformative Practice
   
 => Therapy LLM & Web Application 📝
 
