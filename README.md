@@ -46,7 +46,7 @@
 <br>
 
 <h4> AI_Solution </h4>
-<img src = "CalmMind_WAI_HACK_Canada/img/ai_sol.png">
+<img src = "img/ai_sol.png">
 
 
 <br>
