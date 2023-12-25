@@ -46,28 +46,28 @@
 <br>
 
 <h4> AI_Solution </h4>
-- 
+ 
 
 
 <br>
 
 
 <h4>Web Application</h4>
-- 
+
 
 <br>
 
 <h4> Future Approach </h4>
-- (1) <br>
-- (2) <br>
-- (3) <br>
+- (1) Connecting Live BioData : Wearable Device <br>
+- (2) Enhancing User Experience and Model Reliability : Voice Emotion Detection, Incorporating Time Varying Data <br>
+- (3) Monetization : Optional Paid Subscription(counseling services from healthcare professionals <br>
 
 
 <h4>Tech Stack</h4>
 - 
 
 <h5>Notion</h5>
-https://devpost.com/software/roadbuddy-lio7xt](https://brindle-confidence-576.notion.site/WAI-Hackathon-Ideas-935aa494857b44fabd43475b375db82d)https://brindle-confidence-576.notion.site/WAI-Hackathon-Ideas-935aa494857b44fabd43475b375db82d
+https://brindle-confidence-576.notion.site/WAI-Hackathon-CalmMind-935aa494857b44fabd43475b375db82d
 
 <br>
 
