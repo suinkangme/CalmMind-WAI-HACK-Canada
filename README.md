@@ -6,7 +6,7 @@
 <br>
 
 <h4>[ DURATION ]‍</h4>
-- Nov 07, 2023 to Dec 08, 2023 ( 1 month )
+- Nov 07, 2023 to Dec 08, 2023 ( 1-month )
 
 <br>
 <br>
@@ -46,14 +46,14 @@
 <br>
 
 <h4> AI_Solution </h4>
- 
+<img src = "CalmMind_WAI_HACK_Canada/img/ai_sol.png">
 
 
 <br>
 
 
-<h4>Web Application</h4>
-
+<h4> Web App - Model Result </h4>
+<img src = "CalmMind_WAI_HACK_Canada/img/result_sad.png">
 
 <br>
 
@@ -64,7 +64,9 @@
 
 
 <h4>Tech Stack</h4>
-- 
+<img src = "CalmMind_WAI_HACK_Canada/img/tech_stacks.png">
+
+<br>
 
 <h5>Notion</h5>
 https://brindle-confidence-576.notion.site/WAI-Hackathon-CalmMind-935aa494857b44fabd43475b375db82d
