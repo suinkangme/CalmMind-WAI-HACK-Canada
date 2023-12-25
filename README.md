@@ -53,7 +53,7 @@
 
 
 <h4> Web App - Model Result </h4>
-<img src = "CalmMind_WAI_HACK_Canada/img/result_sad.png">
+<img src = "/img/result_sad.png">
 
 <br>
 
@@ -64,7 +64,7 @@
 
 
 <h4>Tech Stack</h4>
-<img src = "CalmMind_WAI_HACK_Canada/img/tech_stacks.png">
+<img src = "/img/tech_stacks.png">
 
 <br>
 
