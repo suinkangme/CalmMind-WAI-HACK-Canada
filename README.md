@@ -60,6 +60,7 @@
 - (2) Enhancing User Experience and Model Reliability : Voice Emotion Detection, Incorporating Time Varying Data <br>
 - (3) Monetization : Optional Paid Subscription(counseling services from healthcare professionals <br>
 
+<br>
 
 <h4>Tech Stack</h4>
 <img src = "/img/tech_stacks.png">
