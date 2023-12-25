@@ -48,9 +48,7 @@
 <h4> AI_Solution </h4>
 <img src = "/img/ai_sol.png">
 
-
 <br>
-
 
 <h4> Web App - Model Result </h4>
 <img src = "/img/result_sad.png">
